@@ -8,7 +8,8 @@
 
 ### Servers
 [Browsersync](https://www.browsersync.io) with all the goodies for local dev: **live reload**, **hot swap CSS**, **scroll syncing**, **remote debugging**, [etc](https://www.browsersync.io). Prod server is just a static server.
-
+<br>
+This is a fork of shortstack-openprops made 021724
 <br>
 
 > Watch me break it down on [YouTube!](https://links.argyle.ink/shortstack)
