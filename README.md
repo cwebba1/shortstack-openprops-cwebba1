@@ -1,3 +1,17 @@
+### This is a 2024 Clone of Shortstack-OpenProps
+
+The original Shortstack-OpenProps no longer works. The Rollup configuration needs to be updated.
+
+The repo is modified in the following ways:  
+
+1. The Terser, Rollup-plugin-terser, and Rollup 3.0 dependency conflict has been fixed by following this tutorial: [Peer dependency conflict from the rollup-plugin-terser package, Feb 4, 2023](https://wilcovanes.ch/articles/peer-dependency-conflict-from-the-rollup-plugin-terser-package/)  
+
+2. The CanIUse is (temporarily) updated to 021824  
+
+3. I copied the src css from the OpenProps Github repo and pasted it into the app, in order to have non-minified css in the app, instead of referencing a minified css library hidden within a node module.
+
+### Copy below is from the OpenProps repo and may not be compatable with this repo.
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/59a03ed4-bf70-4441-b65c-200bcd61c013/deploy-status)](https://app.netlify.com/sites/shortstax/deploys)
 
 ### CSS

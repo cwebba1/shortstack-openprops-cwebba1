@@ -10,15 +10,42 @@
     <meta name="color-scheme" content="dark light">
     <meta name="description" content="🙂">
 
-    <link rel="stylesheet" href="bundle.css">
-    <script src="bundle.js" type="module" defer></script>
+<!--    <link rel="stylesheet" href="css/index.css"> -->
+<link rel="stylesheet" href="bundle.css">    <script src="bundle.js" type="module" defer></script>
   </head>
   <body>
 
     <header>
-      <h1>ready.</h1>
-      <small>v1.2.0</small>
+      <h1>ready to rat-tat rock & roll.</h1>
+      <small><a href="https://www.youtube.com/watch?v=qjobBx2P6C0">Rip It Up / Ready Teddy</a></small>
     </header>
-    
+    <main>
+    <h1>Re-installing Short-Stack OpenProp in 2024</h1>
+    <p>I was hoping to get a clean installation of Shortstack OpenProps that I can use to explore OpenProps as a potential portion of my design system.</p>
+    <p>Sadly the dependency problems from 2022 persist. Shortstack OpenProps stopped working properly when rollup3.0 and rollup-plugin-terser@7.0.2 was released.  </p>
+    <p>The latest terser was released three days ago. I was hoping that te conflict would be resolved by now.</p>
+    <p>Terser is now in typeScript. It is now version 5.27.1 • Public • Published 3 days ago.<br>
+    <a href="https://www.npmjs.com/package/terser">Terser</a></p>
+    <h2>Back to square one</h2>
+    <p>I find myself refering back to my 2022 version of shortstack OpenProps to retred previously burn ground.</p>
+    <p>Instantly I have to fight Adam Argyle&rsquo;s too smart by half layout. His layout is a grid layout in columns &ndash; with the header on the left, next body, next footer.</p>
+    <p>It is within an @media query landscape declatation. Why anyone would want to put that type of layout &ndash; or ANY type of layout in a landscape media query is beyond me.</p>
+    <p>Adam Argyle releases OpenProps as a minified, unreadable npm module. In order to get unminified CSS it is necesary to go to the OpenProps Github repo, download it and extract the source files.</p>
+    <p>I&rsquo;ve added my own CSS file at the bottom of the index.css file as a new pair of glasses. I will need to start by undoing, correcting, eleminating his opinionated property declarations.</p>
+    <p>Now that I have that installed I don&rsquo;t need the NPM module but I will have to look and occaisionaly update it. Or not.</p>
+    <h2>Dependencies</h2>
+    <p>Browsersync seems to be working. I had to update caniuse.lite and that update conflicted with the Terser / Rollup peer dependency problem. My programming skills are intermediate but I do not relish the idea of fixing this issue. It is already two years old. I hope someone has fixed the dependency issues and has written a tutorial/bug report on it.</p>
+    <p>Adam Argyle did send a note to me in 2022 suggesting that I try using Vite Open Props instead of ShortStack Open Props. I guess I will try that. I am looking for a cheet sheet for the OpenProps Custom Properties. I may have to make my own.</p>
+    <p>I will return to this build and see if I can fix it. I want to try other custom property libraries. </p>
+    <h2>Custom Property Libraries</h2>
+    <p>I&rsquo;m looking for the custom property library that I want to follow. I am most interested in how custom properties are named. I work on a variety of tutorial by Kevin Powell and I notice how he names certian lists of properties.</p>
+    <p>This week I read a blog post about Andy Bell&rsquo;s <a href="https://piccalil.li/blog/a-css-project-boilerplate/">CSS project boilerplate</a>, which he says is derived from Tailwind. I&rsquo;m going to download it from his repo and see what it is.</p>
+    <p>I have a file full of basic oldfashioned CSS stylesheets that I also want to test. It amazes me that after all these years I do not have a solid pattern for a button.</p>
+    <h2>Late Breaking News:</h2>
+    <p>Before hanging up the project I did a search for &ldquo;terser, rollup-plugin-terser, and rollup 3.0 dependency conflict&rdquo; and found a solution here: <a href="https://wilcovanes.ch/articles/peer-dependency-conflict-from-the-rollup-plugin-terser-package/">Peer dependency conflict from the rollup-plugin-terser package, Feb 4, 2023</a></p>
+    <p>I followed directions and fixed the rollup/terser issue. See 021824 CX notes for details.</p>
+
+
+    </main>
   </body>
 </html>

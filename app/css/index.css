@@ -1,74 +1,12 @@
-@import 'open-props';
-
-:root {
-  --surface: var(--gray-9);
-  --text: var(--gray-1);
-  --brand: var(--indigo-5);
-
-  @media (prefers-color-scheme: light) {
-    --surface: var(--gray-0);
-    --text: var(--gray-9);
-    --brand: var(--indigo-5);
-  }
-}
-
-html {
-  block-size: 100%;
-}
-
-body {
-  min-block-size: 100%;
-  box-sizing: border-box;
-
-  display: grid;
-  place-content: center;
-  gap: var(--size-4);
-
-  background: var(--surface);
-  color: var(--text);
-  font-family: system-ui, sans-serif;
-}
-
-@media (orientation: landscape) {
-  body {
-    grid-auto-flow: column;
-  }
-}
-
-body,
-p,
-ul,
-dl,
-dd,
-dt,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
-  max-inline-size: var(--size-content-1);
-}
-
-p {
-  line-height: 2;
-  font-size: var(--font-size-1);
-  font-weight: var(--font-weight-3);
-  max-inline-size: var(--size-content-1);
-}
-
-::selection {
-  background-color: var(--brand);
-}
+@import 'props.media.css';
+@import 'props.fonts.css';
+@import 'props.sizes.css';
+@import 'props.easing.css';
+@import 'props.zindex.css';
+@import 'props.shadows.css';
+@import 'props.aspects.css';
+@import 'props.colors.css';
+@import 'props.gradients.css';
+@import 'props.animations.css';
+@import 'props.borders.css';
+@import 'cwebba.css';
